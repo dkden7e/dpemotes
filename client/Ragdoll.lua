@@ -1,4 +1,5 @@
-local isInRagdoll = false
+isInRagdoll = false
+local cooldown = false
 
 Citizen.CreateThread(function()
     while true do
@@ -9,16 +10,18 @@ Citizen.CreateThread(function()
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if IsControlJustPressed(2, Config.RagdollKeybind) and Config.RagdollEnabled and IsPedOnFoot(PlayerPedId()) then
-            if isInRagdoll then
-                isInRagdoll = false
-            else
-                isInRagdoll = true
-                Wait(500)
-            end
-        end
+for _, command in pairs({"ragdoll", "suelo"}) do
+	RegisterKeyMapping(command, "/suelo || /ragdoll", "keyboard", Config.RagdollKeybind)
+    RegisterCommand(command, function()
+        ragdoll()
+    end)
+end
+
+function ragdoll()
+    if not cooldown and Config.RagdollEnabled and IsPedOnFoot(PlayerPedId()) then
+        cooldown = true
+        isInRagdoll = not isInRagdoll
+        Citizen.Wait(2000)
+        cooldown = false
     end
-end)
+end
