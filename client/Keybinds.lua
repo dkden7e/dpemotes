@@ -26,7 +26,9 @@ if Config.SqlKeybinding then
                 end
             end
 
-            if not IsPedSittingInAnyVehicle(PlayerPedId()) then
+            local playerPed = PlayerPedId()
+            
+            if not IsPlayerFreeAiming(PlayerId()) and not IsPedSittingInAnyVehicle(playerPed) and not IsPedFalling(playerPed) and not IsPedRagdoll(playerPed) then
                 for k, v in pairs(Config.KeybindKeys) do
                     if IsControlJustReleased(0, v) then
                         if k == keyb1 then if emob1 ~= "" then EmoteCommandStart(nil, { emob1, 0 }) end end
