@@ -4,7 +4,7 @@ Config = {
     -- Thank you to those who provided the NL and PT languages.
     --
 
-    MenuLanguage = 'en',
+    MenuLanguage = 'es',
     -- Set this to true to enable some extra prints
     DebugDisplay = false,
     -- Set this to false if you have something else on X, and then just use /e c to cancel emotes.
@@ -29,12 +29,14 @@ Config = {
     -- You can change the menu position here
     MenuPosition = "right", -- (left, right)
     -- You can enable or disable the Ragdoll keybinding here.
-    RagdollEnabled = false,
-    RagdollKeybind = 303, -- Get the button number here https://docs.fivem.net/game-references/controls/
+    RagdollEnabled = true,
+    RagdollKeybind = "", --303, -- Get the button number here https://docs.fivem.net/game-references/controls/
     -- You can disable the Facial Expressions menu here.
     ExpressionsEnabled = true,
     -- You can disable the Walking Styles menu here.
     WalkingStylesEnabled = true,
+    -- Aim styles
+    AimstylesEnabled = true,
     -- You can disable the Shared Emotes here.
     SharedEmotesEnabled = true,
     CheckForUpdates = true,
@@ -57,6 +59,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Dance Emotes",
         ['animalemotes'] = "🐩 Animal Emotes",
         ['propemotes'] = "📦 Prop Emotes",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favorite",
         ['favoriteinfo'] = "Select an emote here to set it as your favorite.",
         ['rfavorite'] = "Reset favorite",
@@ -106,6 +109,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Danses",
         ['animalemotes'] = "🐩 Emotes d'animaux",
         ['propemotes'] = "📦 Emotes objet",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favori",
         ['favoriteinfo'] = "Définir une emote comme favori.",
         ['rfavorite'] = "Réinitialiser le favori.",
@@ -154,6 +158,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Tanz-Emotes",
         ['animalemotes'] = "🐩 Animal Emotes",
         ['propemotes'] = "📦 Prop-Emotes",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favorit",
         ['favoriteinfo'] = "Wählen Sie hier ein Emote aus, um es als gebundenes Emote festzulegen.",
         ['rfavorite'] = "Keybind zurücksetzen",
@@ -202,6 +207,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Dans Emotes",
         ['animalemotes'] = "🐩 Animal Emotes",
         ['propemotes'] = "📦 Objekt Emotes",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favorit",
         ['favoriteinfo'] = "Välj en emote här för att ställa in den som din favorit emote.",
         ['rfavorite'] = "Återställ favorit.",
@@ -250,6 +256,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Bailes",
         ['animalemotes'] = "🐩 Emotes de animales",
         ['propemotes'] = "📦 Objetos",
+        ['aimstyles'] = "Estilos de apuntado (armas selectas)",
         ['favoriteemotes'] = "🌟 Favoritos",
         ['favoriteinfo'] = "Seleccione un emoticón aquí para configurarlo como su favorito.",
         ['rfavorite'] = "Restablecer favorito",
@@ -298,6 +305,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Dans Animaties",
         ['animalemotes'] = "🐩 Dier Animaties",
         ['propemotes'] = "📦 Prop Animaties",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favorieten",
         ['favoriteinfo'] = "Selecteer hier een animatie om deze als favoriete in te stellen.",
         ['rfavorite'] = "Reset Favorieten",
@@ -347,6 +355,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Emotes de Danças",
         ['animalemotes'] = "🐩 Emotes de Animais",
         ['propemotes'] = "📦 Emotes com Props",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Favoritos",
         ['favoriteinfo'] = "Selecione um emote para colocá-lo nos seus favoritos",
         ['rfavorite'] = "Limpar favoritos",
@@ -396,6 +405,7 @@ Config.Languages = {
         ['danceemotes'] = "🕺 Animazioni Di Danza",
         ['animalemotes'] = "🐩 Animazioni Di Animali",
         ['propemotes'] = "📦 Animazioni Prop",
+        ['aimstyles'] = "🎯 Aimstyles",
         ['favoriteemotes'] = "🌟 Emote preferite",
         ['favoriteinfo'] = "Seleziona un'animazione per metterla nei preferiti.",
         ['rfavorite'] = "Rimuovi preferito",

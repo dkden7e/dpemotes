@@ -3,6 +3,12 @@
 -- To get a higher gamebuild, see ReadMe on github repositorty
 DP = {}
 
+DP.Aim = {
+    ["Normal"] = {"default"},
+    ["Gangster"] = {"Gang1H"},
+    ["Cowboy"] = {"Hillbilly"},
+}
+
 DP.Expressions = {
     ["Angry"] = { "Expression", "mood_angry_1" },
     ["Drunk"] = { "Expression", "mood_drunk_1" },
@@ -196,26 +202,92 @@ DP.Shared = {
     } },
     ["slapped"] = { "melee@unarmed@streamed_variations", "victim_takedown_front_slap", "Slapped", "slap" },
     ["slapped2"] = { "melee@unarmed@streamed_variations", "victim_takedown_front_backslap", "Slapped 2", "slap2" },
-    ["receiveblowjob"] = { "misscarsteal2pimpsex", "pimpsex_punter", "Receive Blowjob", "Give Blowjob", AnimationOptions = {
-        EmoteMoving = false,
-        EmoteDuration = 30000,
-        SyncOffsetFront = 0.63
-    } },
-    ["giveblowjob"] = { "misscarsteal2pimpsex", "pimpsex_hooker", "Give Blowjob", "Receive Blowjob", AnimationOptions = {
-        EmoteMoving = false,
-        EmoteDuration = 30000,
-        SyncOffsetFront = 0.63
-    } },
-    ["streetsexmale"] = { "misscarsteal2pimpsex", "shagloop_pimp", "Street Sex Male", "Street Sex Female", AnimationOptions = {
-        EmoteMoving = false,
-        EmoteLoop = true,
-        SyncOffsetFront = 0.50
-    } },
-    ["streetsexfemale"] = { "misscarsteal2pimpsex", "shagloop_hooker", "Street Sex Female", "Street Sex Male", AnimationOptions = {
-        EmoteMoving = false,
-        EmoteLoop = true,
-        SyncOffsetFront = -0.50
-    } },
+--    ["receiveblowjob"] = { "misscarsteal2pimpsex", "pimpsex_punter", "Receive Blowjob", "Give Blowjob", AnimationOptions = {
+--        EmoteMoving = false,
+--        EmoteDuration = 30000,
+--        SyncOffsetFront = 0.63
+--    } },
+--    ["giveblowjob"] = { "misscarsteal2pimpsex", "pimpsex_hooker", "Give Blowjob", "Receive Blowjob", AnimationOptions = {
+--        EmoteMoving = false,
+--        EmoteDuration = 30000,
+--        SyncOffsetFront = 0.63
+--    } },
+--    ["streetsexmale"] = { "misscarsteal2pimpsex", "shagloop_pimp", "Street Sex Male", "Street Sex Female", AnimationOptions = {
+--        EmoteMoving = false,
+--        EmoteLoop = true,
+--        SyncOffsetFront = 0.50
+--    } },
+--    ["streetsexfemale"] = { "misscarsteal2pimpsex", "shagloop_hooker", "Street Sex Female", "Street Sex Male", AnimationOptions = {
+--        EmoteMoving = false,
+--        EmoteLoop = true,
+--        SyncOffsetFront = -0.50
+--    } },
+	-- ANIMACIONES ROMÁNTICAS
+	["abrazaditos1a"] = {"misscarsteal2chad_goodbye", "chad_armsaround_chad", "Abrazadit@s tiernamente 1 (A)", "abrazaditos1b", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteLoop = true,
+		SyncOffsetFront = 0.50, Exclusive = true
+	}},
+	["abrazaditos1b"] = {"misscarsteal2chad_goodbye", "chad_armsaround_girl", "Abrazadit@s tiernamente 1 (B)", "abrazaditos1a", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteLoop = true,
+		SyncOffsetFront = 0.50, Exclusive = true
+	}},
+	["abrazaditos2a"] = {"misscarsteal2chad_goodbye", "chad_idle_chad", "Abrazadit@s tiernamente 2 (A)", "abrazaditos2b", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteLoop = true,
+		SyncOffsetFront = 0.50, Exclusive = true
+	}},
+	["abrazaditos2b"] = {"misscarsteal2chad_goodbye", "chad_idle_girl", "Abrazadit@s tiernamente 2 (B)", "abrazaditos2a", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteLoop = true,
+		SyncOffsetFront = 0.50, Exclusive = true
+	}},
+	["comerboca1"] = {"hs3_ext-20", "cs_lestercrest_3_dual-20", "Comer boca (A)", "comerboca2", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteDuration = 4500,
+		SyncOffsetFront = 0.45, Exclusive = true
+	}},
+	["comerboca2"] = {"hs3_ext-20", "csb_georginacheng_dual-20", "Comer boca (B)", "comerboca1", AnimationOptions =
+	{
+		EmoteMoving = false,
+		EmoteDuration = 4500,
+		SyncOffsetFront = 0.45, Exclusive = true
+	}},
+	-- ANIMACIONES SEXUALES EXPLÍCITAS
+--	["sexodar1"] = {"misscarsteal2pimpsex", "shagloop_pimp", "Percutir", "sexorecibir1", AnimationOptions =
+--		{
+--			EmoteMoving = false,
+--			EmoteLoop = true,
+--			SyncOffsetFront = 0.35, Exclusive = true
+--		}
+--	},
+--	["sexorecibir1"] = {"misscarsteal2pimpsex", "shagloop_hooker", "Ser percutido/a", "sexodar1", AnimationOptions =
+--		{
+--			EmoteMoving = false,
+--			EmoteLoop = true,
+--			SyncOffsetFront = 0.35, Exclusive = true
+--		}
+--	},
+--	["mamadarecibir"] = {"misscarsteal2pimpsex", "pimpsex_punter", "Mamada (recibir)", "mamadadar", AnimationOptions =
+--		{
+--			EmoteMoving = false,
+--			EmoteDuration = 30000,
+--			SyncOffsetFront = 0.63, Exclusive = true
+--		}
+--	},
+--	["mamadadar"] = {"misscarsteal2pimpsex", "pimpsex_hooker", "Mamada (dar)", "mamadarecibir", AnimationOptions =
+--		{
+--			EmoteMoving = false,
+--			EmoteDuration = 30000,
+--			SyncOffsetFront = 0.63, Exclusive = true
+--		}
+--	},
 }
 
 DP.Dances = {
@@ -518,6 +590,100 @@ DP.Dances = {
     ["lapchair3"] = { "mini@strip_club@lap_dance@ld_girl_a_song_a_p3", "ld_girl_a_song_a_p3_f", "Lap Chair3", AnimationOptions = {
         EmoteLoop = true,
     } },
+
+	-- 9 DRILL DANCES BY DIVINED (PREMIUM)
+	["woowalk"] = {"div@woowalk@test", "woowalk", "Woo Walk", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["drilldance"] = {"div@woowalk@test", "drilldance", "Drill Dance", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["cripwalk2"] = {"div@woowalk@test", "cripwalk2", "Crip Walk", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["sturdy2"] = {"div@woowalk@test", "sturdy2", "Get Sturdy", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["bloodwalk2"] = {"div@woowalk@test", "bloodwalk2", "Blood Walk", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["blixkytwirl2"] = {"div@woowalk@test", "blixkytwirl2", "Blixky Twirl", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["catdaddy"] = {"div@woowalk@test", "catdaddy", "Cat Daddy", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["popdance"] = {"div@woowalk@test", "popdance", "Pop Smoke Dance", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["toprock"] = {"div@woowalk@test", "toprock", "Toprock", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+
+	-- 12 ROLEPLAY ANIMATIONS BY DIVINED (FREE) (DANCES)
+	["bunnyhop"] = {"divined@rpack@new", "bunnyhop", "Bunnyhop", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["yeet"] = {"divined@rpack@new", "yeet", "Yeet", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+
+    -- FREE CUSTOM PACK (DANCES)
+	["armswirl"] = {"custom@armswirl", "armswirl", "Arm swirl", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["armwave"] = {"custom@armwave", "armwave", "Arm wave", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["gangnamstyle"] = {"custom@gangnamstyle", "gangnamstyle", "Gangnam Style", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["makarena"] = {"custom@makarena", "makarena", "Macarena", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["maraschino"] = {"custom@maraschino", "maraschino", "Maraschino Spin", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["salsa"] = {"custom@salsa", "salsa", "Salsa", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	-- FREE FORTNITE PACK
+	["fortnite_downward"] = {"custom@downward_fortnite", "Downward_fortnite", "Downward (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["fortnite_pullup"] = {"custom@pullup", "pullup", "Pullup (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["fortnite_rollie"] = {"custom@rollie", "rollie", "Rollie (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["fortnite_wanna_see_me"] = {"custom@wanna_see_me", "wanna_see_me", "Wanna see me (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["fortnite_billybounce"] = {"custom@billybounce", "billybounce", "Billy bounce (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
 }
 
 DP.AnimalEmotes = {
@@ -1928,6 +2094,181 @@ DP.Emotes = {
         EmoteMoving = true,
         EmoteDuration = 5000
     } },
+
+	-- 11 GANGSIGNS BY DIVINED (FREE)
+    ["mgangsign_1"] = {"mikey@gangsigns@new", "mgangsign_1", "Gangsign 1", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_2"] = {"mikey@gangsigns@new", "mgangsign_2", "Gangsign 2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_3"] = {"mikey@gangsigns@new", "mgangsign_3", "Gangsign 3", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_4"] = {"mikey@gangsigns@new", "mgangsign_4", "Gangsign 4", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_5"] = {"mikey@gangsigns@new", "mgangsign_5", "Gangsign 5", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_6"] = {"mikey@gangsigns@new", "mgangsign_6", "Gangsign 6", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_7"] = {"mikey@gangsigns@new", "mgangsign_7", "Gangsign 7", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_8"] = {"mikey@gangsigns@new", "mgangsign_8", "Gangsign 8", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_9"] = {"mikey@gangsigns@new", "mgangsign_9", "Gangsign 9", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_10"] = {"mikey@gangsigns@new", "mgangsign_10", "Gangsign 10", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+    ["mgangsign_11"] = {"mikey@gangsigns@new", "mgangsign_11", "Gangsign 11", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true, Exclusive = true
+    }},
+     -- 9 GANGSIGNS BY DIVINED (V2 - PREMIUM)
+     ["mgangsigns_12"] = {"mikey@gangsigns2@new", "mgangsigns_1", "Gangsign 12", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_13"] = {"mikey@gangsigns2@new", "mgangsigns_2", "Gangsign 13", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_14"] = {"mikey@gangsigns2@new", "mgangsigns_3", "Gangsign 14", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_15"] = {"mikey@gangsigns2@new", "mgangsigns_4", "Gangsign 15", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_16"] = {"mikey@gangsigns2@new", "mgangsigns_5", "Gangsign 16", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_17"] = {"mikey@gangsigns2@new", "mgangsigns_6", "Gangsign 17", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_18"] = {"mikey@gangsigns2@new", "mgangsigns_7", "Gangsign 18", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_19"] = {"mikey@gangsigns2@new", "mgangsigns_8", "Gangsign 19", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+     ["mgangsigns_20"] = {"mikey@gangsigns2@new", "mgangsigns_9", "Gangsign 20", AnimationOptions =
+     {
+         EmoteLoop = true, Exclusive = true
+     }},
+
+    -- 12 ROLEPLAY ANIMATIONS BY DIVINED (FREE) (NO DANCES)
+	["Heart"] = {"divined@rpack@new", "alchemy", "Heart", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["badmood"] = {"divined@rpack@new", "badmood", "Bad Mood", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["burpee"] = {"divined@rpack@new", "burpee", "Burpee", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["callme"] = {"divined@rpack@new", "callme", "Call Me", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["coronet"] = {"divined@rpack@new", "coronet", "Coronet", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["dcry"] = {"divined@rpack@new", "dcry", "Cry", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["hailcab"] = {"divined@rpack@new", "hailcab", "Hailcab", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["kepler"] = {"divined@rpack@new", "kepler", "King Of The Jungle", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["mindblown"] = {"divined@rpack@new", "mindblown", "Mindblown", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+	["uproar"] = {"divined@rpack@new", "uproar", "Uproar", AnimationOptions =
+	{
+		EmoteLoop = true, Exclusive = true
+	}},
+
+	-- FREE CUSTOM PACK (NO DANCES)
+    ["circle_crunch"] = {"custom@circle_crunch", "circle_crunch", "Circle crunch", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["dig"] = {"custom@dig", "dig", "Dig", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+	
+	["pickfromground"] = {"custom@pickfromground", "pickfromground", "Pick from ground", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = false, Exclusive = true,
+	}},
+
+	["what_idk"] = {"custom@what_idk", "what_idk", "What???", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = false, Exclusive = true,
+	}},
+
+	-- SINGLE ONES (BELOW HERE ALL ADDON ANIMATIONS CAME SEPARATELY)
+	["sheeeeesh"] = {"custom@sheeeeesh", "sheeeeesh", "Sheeeeesh!", AnimationOptions = {
+		EmoteMoving = true, EmoteLoop = false, Exclusive = true,
+	}},
+
+	["cant_see"] = {"custom@cant_see", "cant_see", "Can't see", AnimationOptions = {
+		EmoteMoving = true, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["dab"] = {"custom@dab", "dab", "Dab", AnimationOptions = {
+		EmoteMoving = true, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["frizzle_receive"] = {"custom@suspect", "suspect", "Frizzle (receive)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
+	}},
+
+	["frizzle_do"] = {"custom@police", "police", "Frizzle (do)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = false, Exclusive = true,
+	}},
+
 }
 
 DP.PropEmotes = {

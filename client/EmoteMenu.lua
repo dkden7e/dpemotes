@@ -39,6 +39,7 @@ local KeyEmoteTable = {}
 local DanceTable = {}
 local AnimalTable = {}
 local PropETable = {}
+local AimTable = {}
 local WalkTable = {}
 local FaceTable = {}
 local ShareTable = {}
@@ -65,18 +66,17 @@ lang = Config.MenuLanguage
 function AddEmoteMenu(menu)
     local submenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['emotes'], "", "", Menuthing, Menuthing)
     local dancemenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['danceemotes'], "", "", Menuthing, Menuthing)
-    local animalmenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['animalemotes'], "", "", Menuthing, Menuthing)
-    local propmenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['propemotes'], "", "", Menuthing, Menuthing)
-    table.insert(EmoteTable, Config.Languages[lang]['danceemotes'])
-    table.insert(EmoteTable, Config.Languages[lang]['danceemotes'])
-    table.insert(EmoteTable, Config.Languages[lang]['animalemotes'])
-
     if Config.SharedEmotesEnabled then
         sharemenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['shareemotes'], Config.Languages[lang]['shareemotesinfo'], "", Menuthing, Menuthing)
         shareddancemenu = _menuPool:AddSubMenu(sharemenu, Config.Languages[lang]['sharedanceemotes'], "", "", Menuthing, Menuthing)
         table.insert(ShareTable, 'none')
         table.insert(EmoteTable, Config.Languages[lang]['shareemotes'])
     end
+    local animalmenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['animalemotes'], "", "", Menuthing, Menuthing)
+    local propmenu = _menuPool:AddSubMenu(submenu, Config.Languages[lang]['propemotes'], "", "", Menuthing, Menuthing)
+    table.insert(EmoteTable, Config.Languages[lang]['danceemotes'])
+    table.insert(EmoteTable, Config.Languages[lang]['danceemotes'])
+    table.insert(EmoteTable, Config.Languages[lang]['animalemotes'])
 
     if not Config.SqlKeybinding then
         unbind2item = NativeUI.CreateItem(Config.Languages[lang]['rfavorite'], Config.Languages[lang]['rfavorite'])
@@ -95,6 +95,7 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.Emotes) do
         x, y, z = table.unpack(b)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
         emoteitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         submenu:AddItem(emoteitem)
         table.insert(EmoteTable, a)
@@ -107,6 +108,7 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.Dances) do
         x, y, z = table.unpack(b)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
         danceitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         sharedanceitem = NativeUI.CreateItem(z, "")
         dancemenu:AddItem(danceitem)
@@ -126,6 +128,7 @@ function AddEmoteMenu(menu)
     if Config.SharedEmotesEnabled then
         for a, b in pairsByKeys(DP.Shared) do
             x, y, z, otheremotename = table.unpack(b)
+            z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
             if otheremotename == nil then
                 shareitem = NativeUI.CreateItem(z, "/nearby (~g~" .. a .. "~w~)")
             else
@@ -268,6 +271,20 @@ function AddFaceMenu(menu)
     end
 end
 
+function AddAimMenu(menu)
+    local aimmenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['aimstyles'], "", "", Menuthing, Menuthing)
+    for a, b in pairsByKeys(DP.Aim) do
+        x = table.unpack(b)
+        aimitem = NativeUI.CreateItem(a, "/e (" .. string.lower(a) .. ")")
+        aimmenu:AddItem(aimitem)
+        table.insert(AimTable, x)
+    end
+
+    aimmenu.OnItemSelect = function(sender, item, index)
+        SetWeaponAnimationOverride(PlayerPedId(), GetHashKey(AimTable[index]))
+    end
+end
+
 function AddInfoMenu(menu)
     if not UpdateAvailable then
         infomenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['infoupdate'], "(1.7.4)", "", Menuthing, Menuthing)
@@ -303,6 +320,9 @@ if Config.WalkingStylesEnabled then
 end
 if Config.ExpressionsEnabled then
     AddFaceMenu(mainMenu)
+end
+if Config.AimstylesEnabled then
+    AddAimMenu(mainMenu)
 end
 
 _menuPool:RefreshIndex()
