@@ -3,6 +3,9 @@
 -- To get a higher gamebuild, see ReadMe on github repositorty
 DP = {}
 
+QueServer = GetConvar("server_number", "1")
+isTencity = (QueServer == "TENCITY")
+
 DP.Aim = {
     ["Normal"] = {"default"},
     ["Gangster"] = {"Gang1H"},
@@ -259,36 +262,39 @@ DP.Shared = {
 		EmoteDuration = 4500,
 		SyncOffsetFront = 0.45, Exclusive = true
 	}},
-	-- ANIMACIONES SEXUALES EXPLÍCITAS
---	["sexodar1"] = {"misscarsteal2pimpsex", "shagloop_pimp", "Percutir", "sexorecibir1", AnimationOptions =
---		{
---			EmoteMoving = false,
---			EmoteLoop = true,
---			SyncOffsetFront = 0.35, Exclusive = true
---		}
---	},
---	["sexorecibir1"] = {"misscarsteal2pimpsex", "shagloop_hooker", "Ser percutido/a", "sexodar1", AnimationOptions =
---		{
---			EmoteMoving = false,
---			EmoteLoop = true,
---			SyncOffsetFront = 0.35, Exclusive = true
---		}
---	},
---	["mamadarecibir"] = {"misscarsteal2pimpsex", "pimpsex_punter", "Mamada (recibir)", "mamadadar", AnimationOptions =
---		{
---			EmoteMoving = false,
---			EmoteDuration = 30000,
---			SyncOffsetFront = 0.63, Exclusive = true
---		}
---	},
---	["mamadadar"] = {"misscarsteal2pimpsex", "pimpsex_hooker", "Mamada (dar)", "mamadarecibir", AnimationOptions =
---		{
---			EmoteMoving = false,
---			EmoteDuration = 30000,
---			SyncOffsetFront = 0.63, Exclusive = true
---		}
---	},
 }
+
+if not isTencity then
+    -- ANIMACIONES SEXUALES EXPLÍCITAS
+    DP.Shared["sexodar1"] = {"misscarsteal2pimpsex", "shagloop_pimp", "Percutir", "sexorecibir1", AnimationOptions =
+        {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            SyncOffsetFront = 0.35, Exclusive = true
+        }
+    }
+    DP.Shared["sexorecibir1"] = {"misscarsteal2pimpsex", "shagloop_hooker", "Ser percutido/a", "sexodar1", AnimationOptions =
+        {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            SyncOffsetFront = 0.35, Exclusive = true
+        }
+    }
+    DP.Shared["mamadarecibir"] = {"misscarsteal2pimpsex", "pimpsex_punter", "Mamada (recibir)", "mamadadar", AnimationOptions =
+        {
+            EmoteMoving = false,
+            EmoteDuration = 30000,
+            SyncOffsetFront = 0.63, Exclusive = true
+        }
+    }
+    DP.Shared["mamadadar"] = {"misscarsteal2pimpsex", "pimpsex_hooker", "Mamada (dar)", "mamadarecibir", AnimationOptions =
+        {
+            EmoteMoving = false,
+            EmoteDuration = 30000,
+            SyncOffsetFront = 0.63, Exclusive = true
+        }
+    }
+end
 
 DP.Dances = {
     ["dance"] = { "anim@amb@nightclub@dancers@podium_dancers@", "hi_dance_facedj_17_v2_male^5", "Dance", AnimationOptions = {
