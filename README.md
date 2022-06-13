@@ -2,6 +2,8 @@
 
 Emotes / Animations for FiveM with human, animal and prop support 🐩
 
+# Custom Police Badges & Pride Flags! 🏳️‍🌈
+
 # Available in:
 
 * Brazilian Portuguese 🇧🇷
@@ -26,7 +28,7 @@ If you happen to find any incorrect translations or would like to add more langu
 
 Languages can be selected and/or added in config.lua.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Ragdoll 🥴
 
@@ -36,17 +38,29 @@ Languages can be selected and/or added in config.lua.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Menu Keybind
+# Menu Keybind 🎛️
 
-* Menu key has been changed to F5 as for some reason, F3 and F4 clash with [Menyoo](https://github.com/MAFINS/MenyooSP) and controllers 🎮
+**Important Note:**
 
-You can change this in the `config.lua`;
+The keybind uses RegisterKeyMapping. By default, the server owner configured keybind in the *initial* config.lua will be the default key, however once the keybind is set for a user, it'll stay with this new value. Editing the config keybind will change it for new players only.
+
+* Menu key:* F5
+
+F3 and F4 clash with [Menyoo](https://github.com/MAFINS/MenyooSP) and controllers 🎮
+
+Server owners can change this in the `config.lua`;
 
 ```lua
 MenuKeybind = 'F5', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 ```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Alternatively, the player base can set their own menu keybind to open DpEmotes
+
+```lua
+Esc > settings > keybinds > fivem > dpemotes
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Keybinds and SQL 🎛️
 
@@ -55,10 +69,25 @@ The original dpemotes uses mysql-async which was then changed to ghmattimysql. U
 To use the SQL features, install the [oxmysql](https://github.com/overextended/oxmysql) resource. If you do not want to use the SQL features, comment out the `oxmysql` region in fxmanifest.lua.
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Screenshots 📸
 
 
-# Installation Instructions:
+
+| | | |
+|-|-|-|
+| <img src="screenshots/menu.jpg" width="250"> |
+| <img src="screenshots/cb_before.jpg" width="250"> | <img src="screenshots/cp_after.jpg" width="250"> | <img src="screenshots/umbrella.jpg" width="250"> |
+| <img src="screenshots/flag1.jpg" width="250"> | <img src="screenshots/flag2.jpg" width="250"> | <img src="screenshots/flag3.jpg" width="250"> |
+| <img src="screenshots/flag4.jpg" width="250"> | <img src="screenshots/flag5.jpg" width="250"> | <img src="screenshots/flag6.jpg" width="250"> |
+| <img src="screenshots/flag7.jpg" width="250"> | <img src="screenshots/flag8.jpg" width="250"> | <img src="screenshots/flag9.jpg" width="250"> |
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Installation Instructions ⚙️:
 
 * add DpEmotes to your `server.cfg`
 
@@ -67,22 +96,27 @@ To use the SQL features, install the [oxmysql](https://github.com/overextended/o
 * start dpemotes
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+# Add-Ons 🛠️
+
+* Fixed an issue with the clipboard and adds textures to paper (/e clipboard)
+
+* Changes umbrella texture to black (/e umbrella)
 
 # Optional Add-Ons 🛠️
 
-* Fixes an issue with the clipboard and adds textures to paper (/e clipboard)
-
 * Adds textures to the mugshot prop (/e mugshot)
-
-* Changes umbrella texture to black (/e umbrella)
 
 * Retextured protest sign (can be changed using Texture Toolkit: https://www.gta5-mods.com/tools/texture-toolkit)
 
 **Grab it here:** 
 
 [Add-Ons For DpEmotes](https://github.com/TayMcKenzieNZ/addonsfordpemotes)
+
+
+--------------------------------------------------------
 
 
 # Additional Instructions 
