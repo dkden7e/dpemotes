@@ -95,7 +95,8 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.Emotes) do
         x, y, z = table.unpack(b)
-        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🌟 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Latest) and ("🆕 " .. z) or z)
         emoteitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         submenu:AddItem(emoteitem)
         table.insert(EmoteTable, a)
@@ -108,7 +109,8 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.Dances) do
         x, y, z = table.unpack(b)
-        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🌟 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Latest) and ("🆕 " .. z) or z)
         danceitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         sharedanceitem = NativeUI.CreateItem(z, "")
         dancemenu:AddItem(danceitem)
@@ -128,7 +130,8 @@ function AddEmoteMenu(menu)
     if Config.SharedEmotesEnabled then
         for a, b in pairsByKeys(DP.Shared) do
             x, y, z, otheremotename = table.unpack(b)
-            z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🆕 " .. z) or z)
+            z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🌟 " .. z) or z)
+            z = ((b.AnimationOptions and b.AnimationOptions.Latest) and ("🆕 " .. z) or z)
             if otheremotename == nil then
                 shareitem = NativeUI.CreateItem(z, "/nearby (~g~" .. a .. "~w~)")
             else

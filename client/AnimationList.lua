@@ -717,6 +717,71 @@ DP.Dances = {
 	["fortnite_billybounce"] = {"custom@billybounce", "billybounce", "Billy bounce (Fortnite)", AnimationOptions = {
 		EmoteMoving = false, EmoteLoop = true, Exclusive = true,
 	}},
+
+    -- PACK HYDRO (BAILES)
+    ["bellydance"] = {"custom@bellydance", "bellydance", "Bellydance (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["crossbounce"] = {"custom@crossbounce", "crossbounce", "Crossbounce (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = false, Exclusive = true, Latest = true
+	}},
+
+    ["dont_start"] = {"custom@dont_start", "dont_start", "Don't start (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["floss"] = {"custom@floss", "floss", "Floss (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["hiphop1"] = {"custom@hiphop1", "hiphop1", "Hip Hop 1", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["hiphop2"] = {"custom@hiphop2", "hiphop2", "Hip Hop 2", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["hiphop3"] = {"custom@hiphop3", "hiphop3", "Hip Hop 3", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["hiphop90s"] = {"custom@hiphop90s", "hiphop90s", "Hip Hop (90s)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["hiphop_slide"] = {"custom@hiphop_slide", "hiphop_slide", "Hip Hop (slide)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["renegade"] = {"custom@renegade", "renegade", "Renegade (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["rickroll"] = {"custom@rickroll", "rickroll", "Never Gonna (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["savage"] = {"custom@savage", "savage", "Savage (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["sayso"] = {"custom@sayso", "sayso", "Say so (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["take_l"] = {"custom@take_l", "take_l", "Take the L (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["toosie_slide"] = {"custom@toosie_slide", "toosie_slide", "Toosie Slide (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["orangejustice"] = {"custom@orangejustice", "orangejustice", "Orange Justice (Fortnite)", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
 }
 
 
@@ -2361,6 +2426,44 @@ DP.Emotes = {
 
 	["frizzle_do"] = {"custom@police", "police", "Frizzle (do)", AnimationOptions = {
 		EmoteMoving = false, EmoteLoop = false, Exclusive = true,
+	}},
+
+    -- PACK HYDRO (SIN BAILES)
+
+    ["convulsion"] = {"custom@convulsion", "convulsion", "Convulsionar", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["female_pose_1"] = {"custom@female_pose_1", "female_pose_1", "Pose fem. 1", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["female_pose_2"] = {"custom@female_pose_2", "female_pose_2", "Pose fem. 2", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["female_pose_3"] = {"custom@female_pose_3", "female_pose_3", "Pose fem. 3", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["male_pose_1"] = {"custom@male_pose_1", "male_pose_1", "Pose masc. 1", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["male_pose_2"] = {"custom@male_pose_2", "male_pose_2", "Pose masc. 2", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["male_pose_3"] = {"custom@male_pose_3", "male_pose_3", "Pose masc. 3", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["pluck_fruits"] = {"custom@pluck_fruits", "pluck_fruits", "Recoger fruta", AnimationOptions = {
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+	}},
+
+    ["waiter"] = {"custom@waiter", "waiter", "Camarer@", AnimationOptions = {
+		EmoteMoving = true, EmoteLoop = true, Exclusive = true, Latest = true
 	}},
 
 }
