@@ -89,14 +89,17 @@ end)
 
 function EmoteCancel()
 
-    ClearPedTasks(PlayerPedId())
+    local playerPed = PlayerPedId()
+    if IsInAnimation or IsPedJumping(playerPed) or IsPedFalling(playerPed) or IsEntityPlayingAnim(playerPed, MostRecentDict, MostRecentAnimation, 3) then -- COPILOT: if player is jumping, then don't cancel the animation. DK: OOMPA LUMPA
+        ClearPedTasks(playerPed)
+    end
     
     if ChosenDict == "MaleScenario" and IsInAnimation then
-        ClearPedTasksImmediately(PlayerPedId())
+        ClearPedTasksImmediately(playerPed)
         IsInAnimation = false
         DebugPrint("Forced scenario exit")
     elseif ChosenDict == "Scenario" and IsInAnimation then
-        ClearPedTasksImmediately(PlayerPedId())
+        ClearPedTasksImmediately(playerPed)
         IsInAnimation = false
         DebugPrint("Forced scenario exit")
     end
@@ -108,6 +111,8 @@ function EmoteCancel()
         PtfxStop()
         DestroyAllProps()
         IsInAnimation = false
+        MostRecentDict = nil
+        MostRecentAnimation = nil
     end
 end
 
@@ -311,18 +316,19 @@ end
 -----------------------------------------------------------------------------------------------------
 
 function OnEmotePlay(EmoteName)
-    InVehicle = IsPedInAnyVehicle(PlayerPedId(), true)
+    local playerPed = PlayerPedId()
+    InVehicle = IsPedInAnyVehicle(playerPed, true)
     if not Config.AllowedInCars and InVehicle == 1 then
         return
     end
 
-    if not DoesEntityExist(PlayerPedId()) then
+    if not DoesEntityExist(playerPed) or IsPedFalling(playerPed) then
         return false
     end
 
     if Config.DisarmPlayer then
-        if IsPedArmed(PlayerPedId(), 7) then
-            SetCurrentPedWeapon(PlayerPedId(), GetHashKey('WEAPON_UNARMED'), true)
+        if IsPedArmed(playerPed, 7) then
+            SetCurrentPedWeapon(playerPed, GetHashKey('WEAPON_UNARMED'), true)
         end
     end
 
@@ -334,7 +340,7 @@ function OnEmotePlay(EmoteName)
     end
 
     if ChosenDict == "Expression" then
-        SetFacialIdleAnimOverride(PlayerPedId(), ChosenAnimation, 0)
+        SetFacialIdleAnimOverride(playerPed, ChosenAnimation, 0)
         return
     end
 
@@ -342,8 +348,8 @@ function OnEmotePlay(EmoteName)
         CheckGender()
         if ChosenDict == "MaleScenario" then if InVehicle then return end
             if PlayerGender == "male" then
-                ClearPedTasks(PlayerPedId())
-                TaskStartScenarioInPlace(PlayerPedId(), ChosenAnimation, 0, true)
+                ClearPedTasks(playerPed)
+                TaskStartScenarioInPlace(playerPed, ChosenAnimation, 0, true)
                 DebugPrint("Playing scenario = (" .. ChosenAnimation .. ")")
                 IsInAnimation = true
             else
@@ -351,15 +357,15 @@ function OnEmotePlay(EmoteName)
             end
             return
         elseif ChosenDict == "ScenarioObject" then if InVehicle then return end
-            BehindPlayer = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0 - 0.5, -0.5);
-            ClearPedTasks(PlayerPedId())
-            TaskStartScenarioAtPosition(PlayerPedId(), ChosenAnimation, BehindPlayer['x'], BehindPlayer['y'], BehindPlayer['z'], GetEntityHeading(PlayerPedId()), 0, 1, false)
+            BehindPlayer = GetOffsetFromEntityInWorldCoords(playerPed, 0.0, 0 - 0.5, -0.5);
+            ClearPedTasks(playerPed)
+            TaskStartScenarioAtPosition(playerPed, ChosenAnimation, BehindPlayer['x'], BehindPlayer['y'], BehindPlayer['z'], GetEntityHeading(playerPed), 0, 1, false)
             DebugPrint("Playing scenario = (" .. ChosenAnimation .. ")")
             IsInAnimation = true
             return
         elseif ChosenDict == "Scenario" then if InVehicle then return end
-            ClearPedTasks(PlayerPedId())
-            TaskStartScenarioInPlace(PlayerPedId(), ChosenAnimation, 0, true)
+            ClearPedTasks(playerPed)
+            TaskStartScenarioInPlace(playerPed, ChosenAnimation, 0, true)
             DebugPrint("Playing scenario = (" .. ChosenAnimation .. ")")
             IsInAnimation = true
             return
@@ -423,7 +429,7 @@ function OnEmotePlay(EmoteName)
         end
     end
 
-    TaskPlayAnim(PlayerPedId(), ChosenDict, ChosenAnimation, 2.0, 2.0, AnimationDuration, MovementType, 0, false, false, false)
+    TaskPlayAnim(playerPed, ChosenDict, ChosenAnimation, 2.0, 2.0, AnimationDuration, MovementType, 0, false, false, false)
     RemoveAnimDict(ChosenDict)
     IsInAnimation = true
     MostRecentDict = ChosenDict
@@ -455,50 +461,50 @@ end
 Citizen.CreateThread(function()
 	local alreadyOpened, unarmedHash, mapHash = false, `WEAPON_UNARMED`, `prop_tourist_map_01`
 	while true do
-			Citizen.Wait(100)
-			playerPed = PlayerPedId()
-			if IsPauseMenuActive() and not alreadyOpened then
-        local cancel = false
-        for i = 1, 80 do
-          if not IsPauseMenuActive() then
-            cancel = true
-            break
-          end
-          Citizen.Wait(50)
-        end
-        if not cancel then
-					if IsPedArmed(playerPed, 7) then
-						SetCurrentPedWeapon(playerPed, unarmedHash, true)
-					end
-					OnEmotePlay(DP.PropEmotes["mapa"])
-					--TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_TOURIST_MAP", 0, false) -- Start the scenario
-					alreadyOpened = true
-					Citizen.Wait(5)
-					for _,v in pairs(PlayerProps) do
-						if GetEntityModel(v) == mapHash then
-							SetEntityCollision(v, false, true)
-						end
-					end
-        end
-			end
+		Citizen.Wait(100)
+		playerPed = PlayerPedId()
+		if IsPauseMenuActive() and not alreadyOpened then
+            local cancel = false
+            for i = 1, 25 do
+                if not IsPauseMenuActive() then
+                    cancel = true
+                    break
+                end
+                Citizen.Wait(25)
+            end
+            if not cancel then
+            	if IsPedArmed(playerPed, 7) then
+            		SetCurrentPedWeapon(playerPed, unarmedHash, true)
+            	end
+            	OnEmotePlay(DP.PropEmotes["map"])
+            	--TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_TOURIST_MAP", 0, false) -- Start the scenario
+            	alreadyOpened = true
+            	Citizen.Wait(5)
+            	for _,v in pairs(PlayerProps) do
+            		if GetEntityModel(v) == mapHash then
+            			SetEntityCollision(v, false, true)
+            		end
+            	end
+            end
+		end
 
-			if alreadyOpened and not IsPauseMenuActive() then
-					Citizen.Wait(800)
-					local count, mapFound = 0, false
-					for _,v in pairs(PlayerProps) do
-						if (not mapFound) and (GetEntityModel(v) == mapHash) then
-							DeleteEntity(v)
-							mapFound = true
-						end
-						count = count + 1
+		if alreadyOpened and not IsPauseMenuActive() then
+				Citizen.Wait(500)
+				local count, mapFound = 0, false
+				for _,v in pairs(PlayerProps) do
+					if (not mapFound) and (GetEntityModel(v) == mapHash) then
+						DeleteEntity(v)
+						mapFound = true
 					end
-					if mapFound and count == 1 then
-						PlayerHasProp = false
-					end
-					ClearPedSecondaryTask(playerPed)
-					Citizen.Wait(2200)
-					alreadyOpened = false
-			end
+					count = count + 1
+				end
+				if mapFound and count == 1 then
+					PlayerHasProp = false
+				end
+				ClearPedSecondaryTask(playerPed)
+				Citizen.Wait(2200)
+				alreadyOpened = false
+		end
 	end
 end)
 
