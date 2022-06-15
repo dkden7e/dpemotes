@@ -122,6 +122,8 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.AnimalEmotes) do
         x, y, z = table.unpack(b)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🌟 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Latest) and ("🆕 " .. z) or z)
         animalitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         animalmenu:AddItem(animalitem)
         table.insert(AnimalTable, a)
@@ -144,6 +146,8 @@ function AddEmoteMenu(menu)
 
     for a, b in pairsByKeys(DP.PropEmotes) do
         x, y, z = table.unpack(b)
+        z = ((b.AnimationOptions and b.AnimationOptions.Exclusive) and ("🌟 " .. z) or z)
+        z = ((b.AnimationOptions and b.AnimationOptions.Latest) and ("🆕 " .. z) or z)
         propitem = NativeUI.CreateItem(z, "/e (" .. a .. ")")
         propmenu:AddItem(propitem)
         table.insert(PropETable, a)

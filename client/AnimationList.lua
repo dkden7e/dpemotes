@@ -388,31 +388,31 @@ DP.Dances = {
         EmoteLoop = true
     } },
 	["danceclubh"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "mi_dance_facedj_17_v2_male^4", "Dance Club 8 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
 	  ["danceclubi"] = { "anim@amb@nightclub_island@dancers@crowddance_single_props@", "mi_dance_prop_13_v1_male^3", "Dance Club 9 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubj"] = { "anim@amb@nightclub_island@dancers@crowddance_groups@groupd@", "mi_dance_crowd_13_v2_male^1", "Dance Club 10 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubk"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "mi_dance_facedj_15_v2_male^4", "Dance Club 11 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubl"] = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance Club 12", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubm"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "hi_dance_facedj_hu_15_v2_male^5", "Dance Club 13 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubn"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "hi_dance_facedj_hu_17_male^5", "Dance Club 14 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubo"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_center", "Dance Club 15 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["danceclubp"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_left_down", "Dance Club 16 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancedrink"] = { "anim@amb@nightclub_island@dancers@beachdanceprop@", "mi_idle_c_m01", "Dance Drink (Beer)", AnimationOptions = {
         Prop = 'prop_beer_amopen',
@@ -812,34 +812,34 @@ DP.Dances = {
 
     -- NEWEST BY MCKENZIENZ (NON ADDON!)
     ["salsa2"] = { "anim@mp_player_intuppersalsa_roll", "idle_a", "Salso Roll", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancecrankdat"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_right_up", "Dance Crank Dat", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
 	} },
 	["dancecrankdat2"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_right_down", "Dance Crank Dat 2", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancemonkey"] = { "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@", "high_center", "Monkey Dance  ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancemonkey2"] = { "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@", "high_center_down", "Monkey Dance 2  ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancemonkey3"] = { "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@", "med_center_down", "Monkey Dance 3  ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["boxdance"] = { "anim@amb@nightclub@mini@dance@dance_solo@beach_boxing@", "med_right_down", "Boxing Dance Solo  ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancehiphop"] = { "anim@amb@nightclub@mini@dance@dance_paired@dance_d@", "ped_a_dance_idle", "Hip Hop Dance ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancehiphop2"] = { "anim@amb@nightclub@mini@dance@dance_paired@dance_b@", "ped_a_dance_idle", "Hip Hop Dance 2 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
     ["dancehiphop3"] = { "anim@amb@nightclub@mini@dance@dance_paired@dance_a@", "ped_a_dance_idle", "Hip Hop Dance 3 ", AnimationOptions = {
-        EmoteLoop = true,
+        EmoteLoop = true, Latest = true
     } },
 }
 
@@ -1506,6 +1506,7 @@ DP.Emotes = {
     } },
     ["leanphone"] = { "amb@world_human_leaning@male@wall@back@mobile@base", "base", "Leaning With Phone", AnimationOptions = {
         EmoteMoving = false,
+        Latest = true,
         EmoteLoop = true,
         Prop = "prop_phone_ing",
         PropBone = 28422,
@@ -2214,25 +2215,31 @@ DP.Emotes = {
     } },
     ["bang"] = { "anim@mp_player_intcelebrationfemale@bang_bang", "bang_bang", "Bang Bang ", AnimationOptions = {
         EmoteMoving = false,
+        Latest = true,
         EmoteDuration = 2500,
     } },
     ["checkcar"] = { "anim@amb@carmeet@checkout_car@male_a@idles", "idle_b", "Check Out · Female ", AnimationOptions = {
         EmoteLoop = true,
+        Latest = true,
     } },
     ["checkcar2"] = { "anim@amb@carmeet@checkout_car@male_c@idles", "idle_a", "Check Out 2 · Male ", AnimationOptions = {
         EmoteLoop = true,
+        Latest = true,
     } },
     ["showboobs"] = { "mini@strip_club@backroom@", "stripper_b_backroom_idle_b", "Show Boobs ", AnimationOptions = {
         EmoteMoving = false,
         EmoteDuration = 6000,
+        Latest = true,
     } },
     ["showboobs2"] = { "mini@strip_club@idles@stripper", "stripper_idle_05", "Show Boobs 2", AnimationOptions = {
         EmoteMoving = false,
         EmoteDuration = 6000,
+        Latest = true,
     } },
     ["watchstripper"] = { "amb@world_human_strip_watch_stand@male_c@idle_a", "idle_b", "Watch Stripper ", AnimationOptions = {
         EmoteMoving = false,
         EmoteDuration = 6000,
+        Latest = true,
     } },
 
 
@@ -3726,6 +3733,7 @@ DP.PropEmotes = {
     } },
     ["sms"]             = { "cellphone@", "cellphone_text_read_base", "SMS", AnimationOptions = {
         Prop = "prop_phone_ing",
+        Latest = true,
         PropBone = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop = true,
@@ -3733,6 +3741,7 @@ DP.PropEmotes = {
     } },
     ["sms2"]            = { "cellphone@female", "cellphone_text_read_base", "SMS 2", AnimationOptions = {
         Prop = "prop_phone_ing",
+        Latest = true,
         PropBone = 28422,
         PropPlacement = { 0.00, 0.00, 0.0301, 0.000, 00.00, 00.00 },
         EmoteLoop = true,
@@ -3740,6 +3749,7 @@ DP.PropEmotes = {
     } },
     ["sms3"]            = { "cellphone@female", "cellphone_email_read_base", "SMS 3", AnimationOptions = {
         Prop = "prop_phone_ing",
+        Latest = true,
         PropBone = 28422,
         PropPlacement = { -0.0190, -0.0240, 0.0300, 18.99, -72.07, 6.39 },
         EmoteLoop = false,
@@ -3747,6 +3757,7 @@ DP.PropEmotes = {
     } },
     ["sms4"]            = { "cellphone@female", "cellphone_text_read_base_cover_low", "SMS 4", AnimationOptions = {
         Prop = "prop_phone_ing",
+        Latest = true,
         PropBone = 28422,
         PropPlacement = { -0.0190, -0.0250, 0.0400, 19.17, -78.50, 14.97 },
         EmoteLoop = false,
@@ -3754,6 +3765,7 @@ DP.PropEmotes = {
     } },
     ["sms5"]            = { "amb@code_human_wander_texting_fat@male@base", "static", "SMS 6", AnimationOptions = {
         Prop = "prop_phone_ing",
+        Latest = true,
         PropBone = 28422,
         PropPlacement = { -0.0200, -0.0100, 0.00, 2.309, 88.845, 29.979 },
         EmoteLoop = false,
@@ -3761,6 +3773,7 @@ DP.PropEmotes = {
     } },
     ["tire"]            = { "anim@heists@box_carry@", "idle", "Tire", AnimationOptions = {
         Prop          = "prop_wheel_tyre",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { -0.05, 0.16, 0.32, -130.0, -55.0, 150.0 },
         EmoteLoop     = true,
@@ -3768,6 +3781,7 @@ DP.PropEmotes = {
     } },
     ["register"]        = { "anim@heists@box_carry@", "idle", "Register", AnimationOptions = {
         Prop          = "v_ret_gc_cashreg",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.138, 0.2, 0.2, -50.0, 290.0, 0.0 },
         EmoteLoop     = true,
@@ -3775,6 +3789,7 @@ DP.PropEmotes = {
     } },
     ["weedbrick"]       = { "impexp_int-0", "mp_m_waremech_01_dual-0", "Weed Brick", AnimationOptions = {
         Prop          = "prop_weed_block_01",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.1, 0.1, 0.05, 0.0, -90.0, 90.0 },
         EmoteLoop     = true,
@@ -3782,6 +3797,7 @@ DP.PropEmotes = {
     } },
     ["weedbrick2"]      = { "anim@heists@box_carry@", "idle", "Weed Brick BIG", AnimationOptions = {
         Prop          = "bkr_prop_weed_bigbag_01a",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.158, -0.05, 0.23, -50.0, 290.0, 0.0 },
         EmoteLoop     = true,
@@ -3789,6 +3805,7 @@ DP.PropEmotes = {
     } },
     ["potplant"]        = { "anim@heists@box_carry@", "idle", "Pot Plant (Small)", AnimationOptions = {
         Prop          = "bkr_prop_weed_01_small_01c",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.138, -0.05, 0.23, -50.0, 290.0, 0.0 },
         EmoteLoop     = true,
@@ -3796,6 +3813,7 @@ DP.PropEmotes = {
     } },
     ["potplant2"]       = { "anim@heists@box_carry@", "idle", "Pot Plant (Medium)", AnimationOptions = {
         Prop          = "bkr_prop_weed_01_small_01b",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.138, -0.05, 0.23, -50.0, 290.0, 0.0 },
         EmoteLoop     = true,
@@ -3803,6 +3821,7 @@ DP.PropEmotes = {
     } },
     ["potplant3"]       = { "anim@heists@box_carry@", "idle", "Pot Plant (Large)", AnimationOptions = {
         Prop          = "bkr_prop_weed_lrg_01b",
+        Latest = true,
         PropBone      = 60309,
         PropPlacement = { 0.138, -0.05, 0.23, -50.0, 290.0, 0.0 },
         EmoteLoop     = true,
@@ -3810,6 +3829,7 @@ DP.PropEmotes = {
     } },
     ["lawnchair"]       = { "timetable@ron@ig_5_p3", "ig_5_p3_base", "Lawnchair", AnimationOptions = {
         Prop          = "prop_skid_chair_02",
+        Latest = true,
         PropBone      = 0,
         PropPlacement = { 0.025, -0.2, -0.1, 45.0, -5.0, 180.0 },
         EmoteLoop     = true,
@@ -3817,6 +3837,7 @@ DP.PropEmotes = {
     } },
     ["lawnchair2"]      = { "timetable@reunited@ig_10", "base_amanda", "Lawnchair 2", AnimationOptions = {
         Prop          = "prop_skid_chair_02",
+        Latest = true,
         PropBone      = 0,
         PropPlacement = { 0.025, -0.15, -0.1, 45.0, 5.0, 180.0 },
         EmoteLoop     = true,
@@ -3824,6 +3845,7 @@ DP.PropEmotes = {
     } },
     ["lawnchair3"]      = { "timetable@ron@ig_3_couch", "base", "Lawnchair 3", AnimationOptions = {
         Prop          = "prop_skid_chair_02",
+        Latest = true,
         PropBone      = 0,
         PropPlacement = { -0.05, 0.0, -0.2, 5.0, 0.0, 180.0 },
         EmoteLoop     = true,
@@ -3831,6 +3853,7 @@ DP.PropEmotes = {
     } },
     ["rose2"]           = { "missheistdocksprep1hold_cellphone", "static", "Rose 2 (Male)", AnimationOptions = {
         Prop          = "prop_single_rose",
+        Latest = true,
         PropBone      = 31086,
         PropPlacement = { -0.0140, 0.1030, 0.0620, -2.932, 4.564, 39.910 },
         EmoteLoop     = false,
@@ -3838,6 +3861,7 @@ DP.PropEmotes = {
     } },
     ["rose3"]           = { "missheistdocksprep1hold_cellphone", "static", "Rose 3 (Female)", AnimationOptions = {
         Prop          = "prop_single_rose",
+        Latest = true,
         PropBone      = 31086,
         PropPlacement = { -0.0140, 0.1070, 0.0720, 0.00, 0.00, 2.99 },
         EmoteLoop     = false,
@@ -3845,6 +3869,7 @@ DP.PropEmotes = {
     } },
     ["cbbox"]           = { "anim@heists@box_carry@", "idle", "Carry Beer Box", AnimationOptions = {
         Prop          = "v_ret_ml_beerben1",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3852,6 +3877,7 @@ DP.PropEmotes = {
     } },
     ["cbbox2"]          = { "anim@heists@box_carry@", "idle", "Carry Beer Box 2", AnimationOptions = {
         Prop          = "v_ret_ml_beerbla1",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3859,6 +3885,7 @@ DP.PropEmotes = {
     } },
     ["cbbox3"]          = { "anim@heists@box_carry@", "idle", "Carry Beer Box 3", AnimationOptions = {
         Prop          = "v_ret_ml_beerjak1",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3866,6 +3893,7 @@ DP.PropEmotes = {
     } },
     ["cbbox4"]          = { "anim@heists@box_carry@", "idle", "Carry Beer Box 4", AnimationOptions = {
         Prop          = "v_ret_ml_beerlog1",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3873,6 +3901,7 @@ DP.PropEmotes = {
     } },
     ["cbbox5"]          = { "anim@heists@box_carry@", "idle", "Carry Beer Box 5", AnimationOptions = {
         Prop          = "v_ret_ml_beerpis1",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3880,6 +3909,7 @@ DP.PropEmotes = {
     } },
     ["cbbox6"]          = { "anim@heists@box_carry@", "idle", "Carry Beer Box 6", AnimationOptions = {
         Prop          = "prop_beer_box_01",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.0200, -0.0600, -0.1200, -180.00, -180.00, 1.99 },
         EmoteLoop     = true,
@@ -3887,6 +3917,7 @@ DP.PropEmotes = {
     } },
     ["gbin"]          = { "anim@heists@box_carry@", "idle", "Garbage Bin", AnimationOptions = {
         Prop          = "prop_bin_08open",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.00, -0.420, -1.290, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3894,6 +3925,7 @@ DP.PropEmotes = {
    } },
     ["gbin2"]          = { "anim@heists@box_carry@", "idle", "Garbage Bin 2", AnimationOptions = {
         Prop          = "prop_cs_bin_01",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.00, -0.420, -1.290, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3901,6 +3933,7 @@ DP.PropEmotes = {
     } },
     ["gbin3"]          = { "anim@heists@box_carry@", "idle", "Garbage Bin 3", AnimationOptions = {
         Prop          = "prop_cs_bin_03",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.00, -0.420, -1.290, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3908,6 +3941,7 @@ DP.PropEmotes = {
     } },
     ["gbin4"]          = { "anim@heists@box_carry@", "idle", "Garbage Bin 4", AnimationOptions = {
         Prop          = "prop_bin_08a",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { 0.00, -0.420, -1.290, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3915,6 +3949,7 @@ DP.PropEmotes = {
     } },
     ["gbin5"]          = { "anim@heists@box_carry@", "idle", "Garbage Bin 5", AnimationOptions = {
         Prop          = "prop_bin_07d",
+        Latest = true,
         PropBone      = 28422,
         PropPlacement = { -0.0100, -0.2200, -0.8600, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
@@ -3922,6 +3957,7 @@ DP.PropEmotes = {
      } },
     ['pflag'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag', AnimationOptions = {
         Prop = 'prideflag1',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -3929,6 +3965,7 @@ DP.PropEmotes = {
     } },
     ['pflag2'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 2', AnimationOptions = {
         Prop = 'prideflag2',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
