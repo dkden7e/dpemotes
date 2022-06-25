@@ -250,68 +250,85 @@ DP.Shared = {
 --        SyncOffsetFront = -0.50
 --    } },
 	-- ANIMACIONES ROMÁNTICAS
-	["abrazaditos1a"] = {"misscarsteal2chad_goodbye", "chad_armsaround_chad", "Abrazadit@s tiernamente 1 (A)", "abrazaditos1b", AnimationOptions =
+	["abrazaditos1a"] = {"misscarsteal2chad_goodbye", "chad_armsaround_chad", "🥰 Abrazadit@s tiernamente 1 (A)", "abrazaditos1b", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteLoop = true,
 		SyncOffsetFront = 0.50, Exclusive = true
 	}},
-	["abrazaditos1b"] = {"misscarsteal2chad_goodbye", "chad_armsaround_girl", "Abrazadit@s tiernamente 1 (B)", "abrazaditos1a", AnimationOptions =
+	["abrazaditos1b"] = {"misscarsteal2chad_goodbye", "chad_armsaround_girl", "🥰 Abrazadit@s tiernamente 1 (B)", "abrazaditos1a", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteLoop = true,
 		SyncOffsetFront = 0.50, Exclusive = true
 	}},
-	["abrazaditos2a"] = {"misscarsteal2chad_goodbye", "chad_idle_chad", "Abrazadit@s tiernamente 2 (A)", "abrazaditos2b", AnimationOptions =
+	["abrazaditos2a"] = {"misscarsteal2chad_goodbye", "chad_idle_chad", "🥰 Abrazadit@s tiernamente 2 (A)", "abrazaditos2b", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteLoop = true,
 		SyncOffsetFront = 0.50, Exclusive = true
 	}},
-	["abrazaditos2b"] = {"misscarsteal2chad_goodbye", "chad_idle_girl", "Abrazadit@s tiernamente 2 (B)", "abrazaditos2a", AnimationOptions =
+	["abrazaditos2b"] = {"misscarsteal2chad_goodbye", "chad_idle_girl", "🥰 Abrazadit@s tiernamente 2 (B)", "abrazaditos2a", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteLoop = true,
 		SyncOffsetFront = 0.50, Exclusive = true
 	}},
-	["comerboca1"] = {"hs3_ext-20", "cs_lestercrest_3_dual-20", "Comer boca (A)", "comerboca2", AnimationOptions =
+	["comerboca1"] = {"hs3_ext-20", "cs_lestercrest_3_dual-20", "🥰 Comer boca (A)", "comerboca2", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteDuration = 4500,
 		SyncOffsetFront = 0.45, Exclusive = true
 	}},
-	["comerboca2"] = {"hs3_ext-20", "csb_georginacheng_dual-20", "Comer boca (B)", "comerboca1", AnimationOptions =
+	["comerboca2"] = {"hs3_ext-20", "csb_georginacheng_dual-20", "🥰 Comer boca (B)", "comerboca1", AnimationOptions =
 	{
 		EmoteMoving = false,
 		EmoteDuration = 4500,
 		SyncOffsetFront = 0.45, Exclusive = true
 	}},
+
+	-- ["darpordetras1"] = {"dollie_mods@follow_me_001", "follow_me_001", "🥰 Dar por detrás (la mano) (A)", "darpordetras2", AnimationOptions =
+	-- {
+	-- 	EmoteMoving = false,
+    --     EmoteLoop = true,
+    --     sameHeading = true,
+	-- 	SyncOffsetFront = -0.85, Exclusive = true, Latest = true
+	-- }},
+
+	-- ["darpordetras2"] = {"dollie_mods@follow_me_002", "follow_me_002", "🥰 Dar por detrás (la mano) (B)", "darpordetras1", AnimationOptions =
+	-- {
+	-- 	EmoteMoving = false,
+    --     EmoteLoop = true,
+    --     sameHeading = true,
+	-- 	SyncOffsetFront = -0.85, Exclusive = true, Latest = true
+	-- }},
+
 }
 
 if not isTencity then
     -- ANIMACIONES SEXUALES EXPLÍCITAS
-    DP.Shared["sexodar1"] = {"misscarsteal2pimpsex", "shagloop_pimp", "Percutir", "sexorecibir1", AnimationOptions =
+    DP.Shared["sexodar1"] = {"misscarsteal2pimpsex", "shagloop_pimp", "🥰 Percutir", "sexorecibir1", AnimationOptions =
         {
             EmoteMoving = false,
             EmoteLoop = true,
             SyncOffsetFront = 0.35, Exclusive = true
         }
     }
-    DP.Shared["sexorecibir1"] = {"misscarsteal2pimpsex", "shagloop_hooker", "Ser percutido/a", "sexodar1", AnimationOptions =
+    DP.Shared["sexorecibir1"] = {"misscarsteal2pimpsex", "shagloop_hooker", "🥰 Ser percutido/a", "sexodar1", AnimationOptions =
         {
             EmoteMoving = false,
             EmoteLoop = true,
             SyncOffsetFront = 0.35, Exclusive = true
         }
     }
-    DP.Shared["mamadarecibir"] = {"misscarsteal2pimpsex", "pimpsex_punter", "Mamada (recibir)", "mamadadar", AnimationOptions =
+    DP.Shared["mamadarecibir"] = {"misscarsteal2pimpsex", "pimpsex_punter", "🥰 Mamada (recibir)", "mamadadar", AnimationOptions =
         {
             EmoteMoving = false,
             EmoteDuration = 30000,
             SyncOffsetFront = 0.63, Exclusive = true
         }
     }
-    DP.Shared["mamadadar"] = {"misscarsteal2pimpsex", "pimpsex_hooker", "Mamada (dar)", "mamadarecibir", AnimationOptions =
+    DP.Shared["mamadadar"] = {"misscarsteal2pimpsex", "pimpsex_hooker", "🥰 Mamada (dar)", "mamadarecibir", AnimationOptions =
         {
             EmoteMoving = false,
             EmoteDuration = 30000,
@@ -388,31 +405,31 @@ DP.Dances = {
         EmoteLoop = true
     } },
 	["danceclubh"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "mi_dance_facedj_17_v2_male^4", "Dance Club 8 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
 	  ["danceclubi"] = { "anim@amb@nightclub_island@dancers@crowddance_single_props@", "mi_dance_prop_13_v1_male^3", "Dance Club 9 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubj"] = { "anim@amb@nightclub_island@dancers@crowddance_groups@groupd@", "mi_dance_crowd_13_v2_male^1", "Dance Club 10 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubk"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "mi_dance_facedj_15_v2_male^4", "Dance Club 11 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubl"] = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance Club 12", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubm"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "hi_dance_facedj_hu_15_v2_male^5", "Dance Club 13 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubn"] = { "anim@amb@nightclub_island@dancers@crowddance_facedj@", "hi_dance_facedj_hu_17_male^5", "Dance Club 14 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubo"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_center", "Dance Club 15 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["danceclubp"] = { "anim@amb@nightclub@mini@dance@dance_solo@shuffle@", "high_left_down", "Dance Club 16 ", AnimationOptions = {
-        EmoteLoop = true, Latest = true
+        EmoteLoop = true --, Latest = true
     } },
     ["dancedrink"] = { "anim@amb@nightclub_island@dancers@beachdanceprop@", "mi_idle_c_m01", "Dance Drink (Beer)", AnimationOptions = {
         Prop = 'prop_beer_amopen',
@@ -747,67 +764,67 @@ DP.Dances = {
 
     -- PACK HYDRO (BAILES)
     ["bellydance"] = {"custom@bellydance", "bellydance", "Bellydance (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["crossbounce"] = {"custom@crossbounce", "crossbounce", "Crossbounce (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = false, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = false, Exclusive = true --, Latest = true
 	}},
 
     ["dont_start"] = {"custom@dont_start", "dont_start", "Don't start (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["floss"] = {"custom@floss", "floss", "Floss (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["hiphop1"] = {"custom@hiphop1", "hiphop1", "Hip Hop 1", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["hiphop2"] = {"custom@hiphop2", "hiphop2", "Hip Hop 2", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["hiphop3"] = {"custom@hiphop3", "hiphop3", "Hip Hop 3", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["hiphop90s"] = {"custom@hiphop90s", "hiphop90s", "Hip Hop (90s)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["hiphop_slide"] = {"custom@hiphop_slide", "hiphop_slide", "Hip Hop (slide)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["renegade"] = {"custom@renegade", "renegade", "Renegade (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["rickroll"] = {"custom@rickroll", "rickroll", "Never Gonna (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["savage"] = {"custom@savage", "savage", "Savage (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["sayso"] = {"custom@sayso", "sayso", "Say so (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["take_l"] = {"custom@take_l", "take_l", "Take the L (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["toosie_slide"] = {"custom@toosie_slide", "toosie_slide", "Toosie Slide (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["orangejustice"] = {"custom@orangejustice", "orangejustice", "Orange Justice (Fortnite)", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     -- NEWEST BY MCKENZIENZ (NON ADDON!)
@@ -841,6 +858,356 @@ DP.Dances = {
     ["dancehiphop3"] = { "anim@amb@nightclub@mini@dance@dance_paired@dance_a@", "ped_a_dance_idle", "Hip Hop Dance 3 ", AnimationOptions = {
         EmoteLoop = true, Latest = true
     } },
+
+    -- TAKEN (WITH PERMISSION) FROM EMPIRE NYC
+    -- ULTRAHACKX
+    ["breakdance"] = {"export@breakdance", "breakdance", "Break Dance", AnimationOptions =
+    {
+       EmoteLoop = true, Exclusive = true, Latest = true,
+    }},
+   -- Custom Dances: Divine
+   ["ddance1"] = {"divined@dances@new", "ddance1", "Baile custom A 1", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance2"] = {"divined@dances@new", "ddance2", "Baile custom A 2", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance3"] = {"divined@dances@new", "ddance3", "Baile custom A 3", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance4"] = {"divined@dances@new", "ddance4", "Baile custom A 4", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance5"] = {"divined@dances@new", "ddance5", "Baile custom A 5", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance6"] = {"divined@dances@new", "ddance6", "Baile custom A 6", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance7"] = {"divined@dances@new", "ddance7", "Baile custom A 7", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance8"] = {"divined@dances@new", "ddance8", "Baile custom A 8", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance9"] = {"divined@dances@new", "ddance9", "Baile custom A 9", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance10"] = {"divined@dances@new", "ddance10", "Baile custom A10", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance11"] = {"divined@dances@new", "ddance11", "Baile custom A11", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance12"] = {"divined@dances@new", "ddance12", "Baile custom A12", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["ddance13"] = {"divined@dances@new", "ddance13", "Baile custom A13", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+
+   -- Version Two
+   ["divdance1"] = {"divined@dancesv2@new", "divdance1", "Baile custom B 1", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance2"] = {"divined@dancesv2@new", "divdance2", "Baile custom B 2", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance3"] = {"divined@dancesv2@new", "divdance3", "Baile custom B 3", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance4"] = {"divined@dancesv2@new", "divdance4", "Baile custom B 4", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance5"] = {"divined@dancesv2@new", "divdance5", "Baile custom B 5", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance6"] = {"divined@dancesv2@new", "divdance6", "Baile custom B 6", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance7"] = {"divined@dancesv2@new", "divdance7", "Baile custom B 7", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance8"] = {"divined@dancesv2@new", "divdance8", "Baile custom B 8", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance9"] = {"divined@dancesv2@new", "divdance9", "Baile custom B 9", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance10"] = {"divined@dancesv2@new", "divdance10", "Baile custom B10", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance11"] = {"divined@dancesv2@new", "divdance11", "Baile custom B11", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance12"] = {"divined@dancesv2@new", "divdance12", "Baile custom B12", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance13"] = {"divined@dancesv2@new", "divdance13", "Baile custom B13", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divdance14"] = {"divined@dancesv2@new", "divdance14", "Baile custom B14", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   -- Divine Breakdance
+   ["divbdance1"] = {"divined@breakdances@new", "divbdance1", "Breakdance custom A 1", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance2"] = {"divined@breakdances@new", "divbdance2", "Breakdance custom A 2", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance3"] = {"divined@breakdances@new", "divbdance3", "Breakdance custom A 3", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance4"] = {"divined@breakdances@new", "divbdance4", "Breakdance custom A 4", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance5"] = {"divined@breakdances@new", "divbdance5", "Breakdance custom A 5", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance6"] = {"divined@breakdances@new", "divbdance6", "Breakdance custom A 6", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance7"] = {"divined@breakdances@new", "divbdance7", "Breakdance custom A 7", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance8"] = {"divined@breakdances@new", "divbdance8", "Breakdance custom A 8", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance9"] = {"divined@breakdances@new", "divbdance9", "Breakdance custom A 9", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance10"] = {"divined@breakdances@new", "divbdance10", "Breakdance custom A10", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance11"] = {"divined@breakdances@new", "divbdance11", "Breakdance custom A11", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance12"] = {"divined@breakdances@new", "divbdance12", "Breakdance custom A12", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance13"] = {"divined@breakdances@new", "divbdance13", "Breakdance custom A13", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance14"] = {"divined@breakdances@new", "divbdance14", "Breakdance custom A14", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["divbdance15"] = {"divined@breakdances@new", "divbdance14", "Breakdance custom A15", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+
+   -- Divine Breakdance v3
+   ["dbrdance1"] = {"divined@brdancesv2@new", "dbrdance1", "Breakdance custom B 1", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance2"] = {"divined@brdancesv2@new", "dbrdance2", "Breakdance custom B 2", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance3"] = {"divined@brdancesv2@new", "dbrdance3", "Breakdance custom B 3", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance4"] = {"divined@brdancesv2@new", "dbrdance4", "Breakdance custom B 4", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance5"] = {"divined@brdancesv2@new", "dbrdance5", "Breakdance custom B 5", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance6"] = {"divined@brdancesv2@new", "dbrdance6", "Breakdance custom B 6", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance7"] = {"divined@brdancesv2@new", "dbrdance7", "Breakdance custom B 7", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance8"] = {"divined@brdancesv2@new", "dbrdance8", "Breakdance custom B 8", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance9"] = {"divined@brdancesv2@new", "dbrdance9", "Breakdance custom B 9", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance10"] = {"divined@brdancesv2@new", "dbrdance10", "Breakdance custom B10", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance11"] = {"divined@brdancesv2@new", "dbrdance11", "Breakdance custom B11", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+   ["dbrdance12"] = {"divined@brdancesv2@new", "dbrdance12", "Breakdance custom B12", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true
+   }},
+
+   -- Divine: Trendy
+   ["banddance"] = {"divined@tdances@new", "dtdance1", "Band Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["bopdance"] = {"divined@tdances@new", "dtdance2", "Bop", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["bboydance"] = {"divined@tdances@new", "dtdance3", "BBoy Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["capoeiramove"] = {"divined@tdances@new", "dtdance4", "Capoeira Move", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hiphopdance"] = {"divined@tdances@new", "dtdance5", "Hip Hop Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hipsterdance"] = {"divined@tdances@new", "dtdance6", "Hipster Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hippiedance"] = {"divined@tdances@new", "dtdance7", "Hippie Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hiphoptaunt"] = {"divined@tdances@new", "dtdance8", "Hip Hop Taunt", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hilowave"] = {"divined@tdances@new", "dtdance9", "Hi Lo Wave", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["squaredance"] = {"divined@tdances@new", "dtdance10", "Square Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hotdance"] = {"divined@tdances@new", "dtdance11", "Hot Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["hulahula"] = {"divined@tdances@new", "dtdance12", "Hula-Hula", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["dabloop"] = {"divined@tdances@new", "dtdance13", "Dab Loop", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["kingdance"] = {"divined@tdances@new", "dtdance14", "The King's Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["linedance"] = {"divined@tdances@new", "dtdance15", "Dance Line", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["magicman"] = {"divined@tdances@new", "dtdance16", "Magic Man", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["marat"] = {"divined@tdances@new", "dtdance17", "Marat", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["maskoff"] = {"divined@tdances@new", "dtdance18", "Mask Off", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["mellow"] = {"divined@tdances@new", "dtdance19", "Mellow", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["showroomdance"] = {"divined@tdances@new", "dtdance20", "Showroom Dance", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["windmillfloss"] = {"divined@tdances@new", "dtdance21", "Windmill Floss", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   ["woahdance"] = {"divined@tdances@new", "dtdance22", "Woah", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+
+   --   Josh custom? (última sección cogida de Empire)
+   ["defaultdance"] = {"custom@dancemoves", "dancemoves", "Baile por defecto (Fortnite)", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   
+   ["discodance"] = {"custom@disco_dance", "disco_dance", "Disco Dance (Fortnite)", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   
+   ["electroshuffle"] = {"custom@electroshuffle_original", "electroshuffle_original", "Electro Shuffle (Fortnite)", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+   
+   ["electroshuffle2"] = {"custom@electroshuffle", "electroshuffle", "Electro Shuffle 2 (Fortnite)", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
+
+   ["hitit"] = {"custom@hitit", "hitit", "Hit It (Fortnite)", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
 }
 
 
@@ -1872,7 +2239,7 @@ DP.Emotes = {
         EmoteLoop = true,
         EmoteMoving = true,
     } },
-    ["gangsign2"] = { "mp_player_int_uppergang_sign_b", "mp_player_int_gang_sign_b", "Gang Sign 2", AnimationOptions = {
+    ["gangsign2"] = { "mp_player_int_uppergang_sign_b", "mp_player_int_gang_sign_b", "Gangsign 4", AnimationOptions = {
         EmoteLoop = true,
         EmoteMoving = true,
     } },
@@ -2523,41 +2890,214 @@ DP.Emotes = {
     -- PACK HYDRO (SIN BAILES)
 
     ["convulsion"] = {"custom@convulsion", "convulsion", "Convulsionar", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["female_pose_1"] = {"custom@female_pose_1", "female_pose_1", "Pose fem. 1", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["female_pose_2"] = {"custom@female_pose_2", "female_pose_2", "Pose fem. 2", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["female_pose_3"] = {"custom@female_pose_3", "female_pose_3", "Pose fem. 3", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["male_pose_1"] = {"custom@male_pose_1", "male_pose_1", "Pose masc. 1", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["male_pose_2"] = {"custom@male_pose_2", "male_pose_2", "Pose masc. 2", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["male_pose_3"] = {"custom@male_pose_3", "male_pose_3", "Pose masc. 3", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["pluck_fruits"] = {"custom@pluck_fruits", "pluck_fruits", "Recoger fruta", AnimationOptions = {
-		EmoteMoving = false, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = false, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
     ["waiter"] = {"custom@waiter", "waiter", "Camarer@", AnimationOptions = {
-		EmoteMoving = true, EmoteLoop = true, Exclusive = true, Latest = true
+		EmoteMoving = true, EmoteLoop = true, Exclusive = true --, Latest = true
 	}},
 
+    -- Dollie Mods
+    ["followa"] = {"dollie_mods@follow_me_001", "follow_me_001", "🥰 Sígueme pose A", AnimationOptions = {
+        EmoteLoop = true, EmoteMoving = true, Exclusive = true --, Latest = true
+    }},
+
+    ["followb"] = {"dollie_mods@follow_me_002", "follow_me_002", "🥰 Sígueme pose B", AnimationOptions = {
+        EmoteLoop = true, EmoteMoving = true, Exclusive = true --, Latest = true
+    }},
+
+    -- TAKEN (WITH PERMISSION) FROM EMPIRE NYC
+   --  Custom Gangsigns
+   ["gsign1"] = {"custom@gsign_01", "gsign_01", "Gangsign 3", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign2"] = {"custom@gsign_02", "gsign_02", "Gangsign 4", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign3"] = {"custom@gsign_03", "gsign_03", "Gangsign 23", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign4"] = {"custom@gsign_04", "gsign_04", "Gangsign 24 By Zen", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign5"] = {"custom@gsign_05", "gsign_05", "Gangsign 25", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign6"] = {"custom@gsign_06", "gsign_06", "Gangsign 26", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign7"] = {"custom@gsign_07", "gsign_07", "Gangsign 27", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign8"] = {"custom@gsign_08", "gsign_08", "Gangsign 28", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign9"] = {"custom@gsign_09", "gsign_09", "Gangsign 29", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign10"] = {"custom@gsign_10", "gsign_10", "Gangsign 30", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign11"] = {"custom@gsign_11", "gsign_11", "Gangsign 31", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign12"] = {"custom@gsign_12", "gsign_12", "Gangsign 32", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign13"] = {"custom@gsign_13", "gsign_13", "Gangsign 33", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign14"] = {"custom@gsign_14", "gsign_14", "Gangsign 34", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign15"] = {"custom@mgsign_01", "mgsign_01", "Gangsign 35", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign16"] = {"custom@mgsign_02", "mgsign_02", "Gangsign 36", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign17"] = {"custom@mgsign_03", "mgsign_03", "Gangsign 37", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign18"] = {"custom@mgsign_04", "mgsign_04", "Gangsign 38", AnimationOptions =
+   {
+     EmoteLoop = true, Exclusive = true, Latest = true,
+     EmoteMoving = false,
+   }},
+   ["gsign19"] = {"custom@gsign_26", "gsign_26", "Gangsign 39", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = false,
+   }},
+   ["gsign20"] = {"custom@gsign_27", "gsign_27", "Gangsign 40", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = false,
+   }},
+   ["gsign21"] = {"custom@gsign_28", "gsign_28", "Gangsign 41", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = false,
+   }},
+   ["gsign22"] = {"custom@gsign_29", "gsign_29", "Gangsign 42", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign23"] = {"custom@gsign_30", "gsign_30", "Gangsign 43", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = false,
+   }},
+   ["gsign24"] = {"custom@gsign_31", "gsign_31", "Gangsign 44", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign25"] = {"custom@gsign_32", "gsign_32", "Gangsign 45", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign26"] = {"custom@gsign_33", "gsign_33", "Gangsign 46", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign27"] = {"custom@gsign_34", "gsign_34", "Gangsign 47", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign28"] = {"custom@gsign_35", "gsign_35", "Gangsign 48", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign29"] = {"custom@gsign_36", "gsign_36", "Gangsign 49", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   ["gsign30"] = {"custom@gsign_37", "gsign_37", "Gangsign 50", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = true,
+   }},
+   
+   ["fsign"] = {"custom@fsign_1", "fsign_1", "Gangsign femenino", AnimationOptions =
+   {
+      EmoteLoop = true, Exclusive = true, Latest = true,
+      EmoteMoving = false,
+   }},
+   -- Manos en los bolsillos
+   ["handspocket"] = {"custom@handsinpockets_1", "handsinpockets_1", "Manos en los bolsillos", AnimationOptions =
+   {
+      EmoteMoving = true,
+      EmoteLoop = true, Exclusive = true, Latest = true,
+   }},
 }
 
 
@@ -3106,6 +3646,7 @@ DP.PropEmotes = {
         --
         EmoteLoop = true,
         EmoteMoving = true,
+        Latest = true,
     } },
     ["binoculars"]      = { "amb@world_human_binoculars@male@idle_b", "idle_f", "Binoculars", AnimationOptions = {
         Prop = "prop_binoc_01",
@@ -3981,6 +4522,7 @@ DP.PropEmotes = {
     } },
     ['pflag3'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 3 - Bisexual ', AnimationOptions = {
         Prop = 'prideflag3',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -3988,6 +4530,7 @@ DP.PropEmotes = {
     } },
     ['pflag4'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 4 - Lesbian ', AnimationOptions = {
         Prop = 'prideflag4',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -3995,6 +4538,7 @@ DP.PropEmotes = {
     } },
     ['pflag5'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 5 - Pansexual ', AnimationOptions = {
         Prop = 'prideflag5',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -4002,6 +4546,7 @@ DP.PropEmotes = {
     } },
     ['pflag6'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 6 - Transexual ', AnimationOptions = {
         Prop = 'prideflag6',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -4009,6 +4554,7 @@ DP.PropEmotes = {
     } },
     ['pflag7'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 7 - Non Binary ', AnimationOptions = {
         Prop = 'prideflag7',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -4016,6 +4562,7 @@ DP.PropEmotes = {
     } },
     ['pflag8'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 8 - Asexual ', AnimationOptions = {
         Prop = 'prideflag8',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
@@ -4023,6 +4570,7 @@ DP.PropEmotes = {
     } },
     ['pflag9'] = { 'rcmnigel1d', 'base_club_shoulder', 'Pride Flag 9 - Straight Ally ', AnimationOptions = {
         Prop = 'prideflag9',
+        Latest = true,
         PropBone = 18905,
         PropPlacement = { 0.0800, -0.2090, 0.0900, -82.6677, -141.2988, 12.3308 },
         EmoteLoop = true,
