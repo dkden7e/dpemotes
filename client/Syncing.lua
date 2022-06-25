@@ -57,9 +57,9 @@ AddEventHandler("SyncPlayEmoteSource", function(emote, player)
         if sameHeading then
             heading = heading + 180.1
         end
-      end
-      heading = heading - 180.1
-      SetEntityHeading(PlayerPedId(), heading)
+    end
+    heading = heading - 180.1
+    SetEntityHeading(PlayerPedId(), heading)
     SetEntityCoordsNoOffset(PlayerPedId(), coords.x, coords.y, coords.z, 0)
     EmoteCancel()
     Wait(300)

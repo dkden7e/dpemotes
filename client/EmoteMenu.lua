@@ -1,4 +1,4 @@
-TriggerServerEvent("dp:CheckVersion")
+--TriggerServerEvent("dp:CheckVersion")
 
 rightPosition = { x = 1450, y = 100 }
 leftPosition = { x = 0, y = 100 }
@@ -293,23 +293,25 @@ function AddAimMenu(menu)
 end
 
 function AddInfoMenu(menu)
-    if not UpdateAvailable then
-        infomenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['infoupdate'], "Huge Thank You ❤️", "", Menuthing, Menuthing)
-    else
-        infomenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['infoupdateav'], Config.Languages[lang]['infoupdateavtext'], "", Menuthing, Menuthing)
-    end
-    contact = NativeUI.CreateItem(Config.Languages[lang]['suggestions'], Config.Languages[lang]['suggestionsinfo'])
-    u170 = NativeUI.CreateItem("Thanks", "DullPear for the original dpemotes ❤️")
-    u165 = NativeUI.CreateItem("Thanks", "AvaN0x for assisting with the formatting of the code.")
-    u160 = NativeUI.CreateItem("Thanks", "SMGMissy for the custom pride flags 🏳️‍🌈.")
-    u151 = NativeUI.CreateItem("Thanks", "Kibook for the addition of Animal Emotes 🐩.")
-    u150 = NativeUI.CreateItem("Thanks", "To you, the community for helping me keep this menu alive ❤️.")
-    infomenu:AddItem(contact)
-    infomenu:AddItem(u170)
-    infomenu:AddItem(u165)
-    infomenu:AddItem(u160)
-    infomenu:AddItem(u151)
-    infomenu:AddItem(u150)
+    -- if not UpdateAvailable then
+    --     infomenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['infoupdate'], "Huge Thank You ❤️", "", Menuthing, Menuthing)
+    -- else
+        -- infomenu = _menuPool:AddSubMenu(menu, Config.Languages[lang]['infoupdateav'], Config.Languages[lang]['infoupdateavtext'], "", Menuthing, Menuthing)
+    -- end
+    -- contact = NativeUI.CreateItem(Config.Languages[lang]['suggestions'], Config.Languages[lang]['suggestionsinfo'])
+    -- u170 = NativeUI.CreateItem("Thanks", "DullPear for the original dpemotes ❤️")
+    -- u165 = NativeUI.CreateItem("Thanks", "AvaN0x for assisting with the formatting of the code.")
+    -- u160 = NativeUI.CreateItem("Thanks", "SMGMissy for the custom pride flags 🏳️‍🌈.")
+    -- u151 = NativeUI.CreateItem("Thanks", "Kibook for the addition of Animal Emotes 🐩.")
+    -- u150 = NativeUI.CreateItem("Thanks", "To you, the community for helping me keep this menu alive ❤️.")
+    -- infomenu:AddItem(contact)
+    -- infomenu:AddItem(u170)
+    -- infomenu:AddItem(u165)
+    -- infomenu:AddItem(u160)
+    -- infomenu:AddItem(u151)
+    -- infomenu:AddItem(u150)
+    local test = NativeUI.CreateItem(Config.Languages[lang]['infoupdateav'], Config.Languages[lang]['infoupdateavtext'])
+    mainMenu:AddItem(test)
 end
 
 function OpenEmoteMenu()
@@ -341,12 +343,12 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterNetEvent("dp:Update")
-AddEventHandler("dp:Update", function(state)
-    UpdateAvailable = state
-    AddInfoMenu(mainMenu)
-    _menuPool:RefreshIndex()
-end)
+-- RegisterNetEvent("dp:Update")
+-- AddEventHandler("dp:Update", function(state)
+--     UpdateAvailable = state
+--     AddInfoMenu(mainMenu)
+--     _menuPool:RefreshIndex()
+-- end)
 
 RegisterNetEvent("dp:RecieveMenu") -- For opening the emote menu from another resource.
 AddEventHandler("dp:RecieveMenu", function()

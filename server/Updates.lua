@@ -6,14 +6,14 @@ if Config.CheckForUpdates then
     end)
 end
 
-RegisterServerEvent("dp:CheckVersion")
-AddEventHandler("dp:CheckVersion", function()
-    if updateavail then
-        TriggerClientEvent("dp:Update", source, true)
-    else
-        TriggerClientEvent("dp:Update", source, false)
-    end
-end)
+-- RegisterServerEvent("dp:CheckVersion")
+-- AddEventHandler("dp:CheckVersion", function()
+--     if updateavail then
+--         TriggerClientEvent("dp:Update", source, true)
+--     else
+--         TriggerClientEvent("dp:Update", source, false)
+--     end
+-- end)
 
 function checkVersion(err, responseText, headers)
     curVersion = LoadResourceFile(GetCurrentResourceName(), "version")
