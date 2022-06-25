@@ -50,12 +50,16 @@ AddEventHandler("SyncPlayEmoteSource", function(emote, player)
     local heading = GetEntityHeading(pedInFront)
     local coords = GetOffsetFromEntityInWorldCoords(pedInFront, 0.0, 1.0, 0.0)
     if (DP.Shared[emote]) and (DP.Shared[emote].AnimationOptions) then
-        local SyncOffsetFront = DP.Shared[emote].AnimationOptions.SyncOffsetFront
+        local SyncOffsetFront, sameHeading = DP.Shared[emote].AnimationOptions.SyncOffsetFront, DP.Shared[emote].AnimationOptions.sameHeading
         if SyncOffsetFront then
             coords = GetOffsetFromEntityInWorldCoords(pedInFront, 0.0, SyncOffsetFront, 0.0)
         end
-    end
-    SetEntityHeading(PlayerPedId(), heading - 180.1)
+        if sameHeading then
+            heading = heading + 180.1
+        end
+      end
+      heading = heading - 180.1
+      SetEntityHeading(PlayerPedId(), heading)
     SetEntityCoordsNoOffset(PlayerPedId(), coords.x, coords.y, coords.z, 0)
     EmoteCancel()
     Wait(300)
