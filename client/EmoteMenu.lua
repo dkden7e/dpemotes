@@ -284,11 +284,11 @@ function AddAimMenu(menu)
         x = table.unpack(b)
         aimitem = NativeUI.CreateItem(a, "/e (" .. string.lower(a) .. ")")
         aimmenu:AddItem(aimitem)
-        table.insert(AimTable, x)
+        table.insert(AimTable, GetHashKey(x))
     end
 
     aimmenu.OnItemSelect = function(sender, item, index)
-        SetWeaponAnimationOverride(PlayerPedId(), GetHashKey(AimTable[index]))
+        SetWeaponAnimationOverride(PlayerPedId(), AimTable[index])
     end
 end
 
@@ -353,4 +353,19 @@ end)
 RegisterNetEvent("dp:RecieveMenu") -- For opening the emote menu from another resource.
 AddEventHandler("dp:RecieveMenu", function()
     OpenEmoteMenu()
+end)
+
+Citizen.CreateThread(function()
+    while not NetworkIsSessionStarted() do
+        Wait(100)
+    end
+    AddInfoMenu(mainMenu)
+    _menuPool:RefreshIndex()
+    for i = 1, #AimTable, 1 do
+        SetWeaponAnimationOverride(PlayerPedId(), AimTable[i])
+        Citizen.Wait(1000)
+    end
+    SetWeaponAnimationOverride(PlayerPedId(), GetHashKey("Default"))
+    collectgarbage("collect")
+    print("¡Estilos de apuntado cargados!")
 end)
