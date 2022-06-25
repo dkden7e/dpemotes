@@ -160,11 +160,20 @@ function EmotesOnCommand(source, args, raw)
 end
 
 function pairsByKeys(t, f)
-    local a = {}
-    for n in pairs(t) do
-        table.insert(a, n)
+    local a, b, c = {}, {}, {}
+    for n, v in pairs(t) do
+        local name, label = n, (v[3] or n) -- LAS FORMAS DE CAMINAR, APUNTAR Y ESTADOS DE ÁNIMO NO TIENEN V[3]
+        table.insert(a, name)
+        table.insert(b, label)
+        c[label] = name
+        if v[3] then
+            v[3] = v[3]:gsub(" A ", " A"):gsub(" B ", " B")
+        end
     end
-    table.sort(a, f)
+    table.sort(b, f)
+    for k, v in ipairs(b) do
+        a[k] = c[v]
+    end
     local i = 0 -- iterator variable
     local iter = function() -- iterator function
         i = i + 1
